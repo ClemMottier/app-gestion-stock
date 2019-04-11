@@ -1,0 +1,11 @@
+<ul>
+ <li *ngFor="let produit of produits; index as i; even as isEven" [style.background-color]="isEven ? '#f42000' : '#B5A361'">
+ {{ i }} - {{ produit.nom | uppercase}}{{ produit.fournisseur}}{{produit.emailFournisseur}}
+ {{ produit.listeIngredients}}
+{{ produit.description | lowercase}}
+{{ produit.age }}
+{{ produit.conditionConservation }}
+{{ produit.prix | number:'2.'}}
+<button> supprimer</button>
+</li>
+</ul>
